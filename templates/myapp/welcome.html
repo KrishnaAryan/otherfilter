@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% extends 'myapp/base.html'%}
+ 
+
+ {% block head %}
+	<title>welcome</title>
+	{% endblock %}
+
+
+	{% block body-block %}
+
+	<h1 align="center">Welcome to Welcome page</h1>
+{% for item in listdata %}
+<ul>
+	
+	<li>{{item.Name}}</li>
+	<li>{{item.Add}}</li>
+	<li>{{item.Dept}}</li>
+	<li>{{item.Sub}}</li>
+
+</ul>
+<hr/>
+
+{% endfor %}
+
+	{% endblock %}
+	
+
+

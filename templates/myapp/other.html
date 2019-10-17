@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% extends 'myapp/base.html'%}
+
+
+{% block head %}
+	<title>Other</title>
+	{% endblock %}
+
+
+
+	{% block body-block %}
+
+	<h1 align="center">Welcome to Other page</h1>
+{% for item in listdata %}
+<ul>
+	<li>{{item.Name|add:" Pvt Litd"}}</li>
+ 	<li>{{item.Sub|truncatechars:3}}</li>
+	<li>{{item.Date|timesince}}</li>
+	<li>{{item.Date|date:"d-m-Y"}}</li>
+
+</ul>
+<hr/>
+{% endfor %}
+
+	{% endblock %}
+	
+
+

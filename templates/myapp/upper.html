@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% extends 'myapp/base.html'%}
+
+
+{% block head %}
+	<title>Upper</title>
+	{% endblock %}
+
+
+
+	{% block body-block %}
+
+	<h1 align="center">Welcome to Upper page</h1>
+{% for item in listdata %}
+<ul>
+	
+	<li>{{item.Name|upper}}</li>
+	<li>{{item.Add|upper}}</li>
+	<li>{{item.Dept|upper}}</li>
+	<li>{{item.Sub|upper}}</li>
+
+</ul>
+<hr/>
+{% endfor %}
+
+	{% endblock %}
+	
+
+

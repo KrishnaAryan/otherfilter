@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% extends 'myapp/base.html'%}
+
+
+{% block head %}
+	<title>Title</title>
+	{% endblock %}
+
+
+
+	{% block body-block %}
+
+	<h1 align="center">Welcome to Title page</h1>
+{% for item in listdata %}
+<ul>
+	
+	<li>{{item.Name|title}}</li>
+	<li>{{item.Add|title}}</li>
+	<li>{{item.Dept|title}}</li>
+	<li>{{item.Sub|title}}</li>
+
+</ul>
+<hr/>
+{% endfor %}
+
+	{% endblock %}
+	
+
+

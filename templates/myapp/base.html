@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="eg">
+<head>
+	<meta charset="utf-8">
+	{% block head %}
+	<title>welcome</title>
+	{% endblock %}
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="{% static 'mycss/cssfile.css' %}">
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-inverse">
+	<div class="container">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="/">KR_Creation</a>
+		
+       </div>
+
+			 <ul class="nav navbar-nav">
+				<li class="active"><a href="/">Home</a></li>
+				<li><a href="/admin">Admin</a></li>
+				<li><a href="/welcome">Welcome</a></li>
+				<li><a href="/upper">Upper</a></li>
+				<li><a href="/lower">Lower</a></li>	
+				<li><a href="/title">Title</a></li>
+                <li><a href="/other">Other</a></li>
+                <li><a href="/custom">Cstomize_Template</a></li>
+				
+
+			</ul>
+
+	</div>
+
+</nav>
+
+{% block body-block %}
+<table width="100%" height="100%">
+    
+    <tr>
+        <th colspan = 4 ></th>
+        <th colspan = 4></th>
+        <th colspan = 4>Updates</th>
+    </tr>
+
+    <tr height="100%">
+        <td colspan = 4 width="33%" ><h3>Abouts</h3><p align="center">Meet Django
+Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design. Built by experienced developers, it takes care of much of the hassle of Web development, so you can focus on writing your app without needing to reinvent the wheel. It’s free and open source.
+
+Ridiculously fast.
+Django was designed to help developers take applications from concept to completion as quickly as possible.
+
+Reassuringly secure.
+Django takes security seriously and helps developers avoid many common security mistakes.
+
+Exceedingly scalable.
+Some of the busiest sites on the Web leverage Django’s ability to quickly and flexibly scale.
+
+Learn more about Django
+Stay in the loop
+Subscribe to one of our mailing lists to stay up to date with everything in the Django community:
+
+Using Django
+Get help with Django and follow announcements.
+
+Enter email
+Subscribe
+You can also subscribe by sending an email to django-users+subscribe@googlegroups.com and following the instructions that will be sent to you.
+
+Contributing to Django
+Contribute to the development of Django itself.
+
+Enter email
+Subscribe
+Before asking a question about how to contribute, read Contributing to Django. Many frequently asked questions are answered there.
+
+You can also subscribe by sending an email to django-developers+subscribe@googlegroups.com and following the instructions that will be sent to you.
+
+We have a few other specialized lists (mentorship, i18n, ...). You can find more information about them in our mailing list documentation.</p></th>
+        <td colspan = 4 width="50%"><img src="{% static 'images/gif.gif' %}" alt="" border=3 height=100% width=100%></img></th>
+        <td colspan = 4 height="100%" width="100%">
+    <marquee behavior="scroll" direction="up"  onmousedown="this.stop();" onmouseup="this.start()">
+        <h3>New Updates...!!!</h3>
+        <div >
+            
+                    <li><a href="/admin">Admin</a></li>
+                    <li><a href="/welcome">Welcome</a></li>
+                    <li><a href="/upper">Upper</a></li>
+                    <li><a href="/lower">Lower</a></li> 
+                    <li><a href="/title">Title</a></li>
+                     <li><a href="/admin">Admin</a></li>
+                    <li><a href="/welcome">Welcome</a></li>
+                    <li><a href="/upper">Upper</a></li>
+                    <li><a href="/lower">Lower</a></li> 
+                    <li><a href="/title">Title</a></li>
+                     <li><a href="/admin">Admin</a></li>
+                    <li><a href="/welcome">Welcome</a></li>
+                    <li><a href="/upper">Upper</a></li>
+                    <li><a href="/lower">Lower</a></li> 
+                    <li><a href="/title">Title</a></li>
+                    <li><a href="/admin">Admin</a></li>
+                    <li><a href="/welcome">Welcome</a></li>
+                    <li><a href="/upper">Upper</a></li>
+                    <li><a href="/lower">Lower</a></li> 
+                    <li><a href="/title">Title</a></li>
+                     <li><a href="/admin">Admin</a></li>
+                    <li><a href="/welcome">Welcome</a></li>
+                    <li><a href="/upper">Upper</a></li>
+                    <li><a href="/lower">Lower</a></li> 
+                    <li><a href="/title">Title</a></li>
+                     <li><a href="/admin">Admin</a></li>
+                    <li><a href="/welcome">Welcome</a></li>
+                    <li><a href="/upper">Upper</a></li>
+                    <li><a href="/lower">Lower</a></li> 
+                    <li><a href="/title">Title</a></li>
+
+
+        </div>
+    </marquee>
+</td>
+    </tr>
+    
+</table>
+
+{% endblock %}
+
+</body>
+</html>

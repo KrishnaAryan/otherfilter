@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% extends 'myapp/base.html'%}
+
+
+{% block head %}
+	<title>Lower</title>
+	{% endblock %}
+
+
+
+	{% block body-block %}
+
+	<h1 align="center">Welcome to Lower page</h1>
+{% for item in listdata %}
+<ul>
+	
+	<li>{{item.Name|lower}}</li>
+	<li>{{item.Add|lower}}</li>
+	<li>{{item.Dept|lower}}</li>
+	<li>{{item.Sub|lower}}</li>
+
+</ul>
+<hr/>
+{% endfor %}
+
+	{% endblock %}
+	
+
+
