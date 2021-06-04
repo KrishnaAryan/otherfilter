@@ -4,7 +4,7 @@ chardet==3.0.4
 Click==7.0
 conda==4.2.7
 cycler==0.10.0
-Django==2.2.6
+Django==2.2.21
 Faker==2.0.2
 Flask==1.1.1
 Flask-SQLAlchemy==2.4.0
